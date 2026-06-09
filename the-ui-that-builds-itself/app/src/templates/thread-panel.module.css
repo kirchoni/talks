@@ -1,0 +1,125 @@
+.root {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  flex: 1;
+  min-width: 18rem;
+  max-width: 24rem;
+  min-height: 0;
+  overflow: hidden;
+  color: var(--ui-color-text-muted);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ui-space-3);
+  padding: var(--ui-space-6);
+  border-bottom: 1px solid var(--ui-color-border);
+}
+
+.headerTitle {
+  margin: 0;
+  color: var(--ui-color-text);
+  font-size: var(--ui-font-size-sm);
+  font-weight: var(--ui-font-weight-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.revealToggle {
+  display: flex;
+  align-items: center;
+  gap: var(--ui-space-2);
+  padding: var(--ui-space-3) var(--ui-space-6);
+  border-bottom: 1px solid var(--ui-color-border);
+  color: var(--ui-color-text);
+  font-size: var(--ui-font-size-sm);
+  cursor: pointer;
+}
+
+.revealToggle input {
+  accent-color: var(--ui-color-primary);
+}
+
+.scroll {
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: var(--ui-space-6);
+}
+
+.turn + .turn {
+  margin-top: var(--ui-space-8);
+  padding-top: var(--ui-space-8);
+  border-top: 1px solid var(--ui-color-border);
+}
+
+.turnHeader {
+  margin: 0 0 var(--ui-space-4);
+  color: var(--ui-color-text-muted);
+  font-size: var(--ui-font-size-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.messageUser,
+.messageAssistant {
+  display: grid;
+  gap: var(--ui-space-3);
+}
+
+.sectionTitle {
+  margin: 0;
+  color: var(--ui-color-text);
+  font-size: var(--ui-font-size-xs);
+  font-weight: var(--ui-font-weight-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  margin: 0;
+  color: var(--ui-color-text);
+  font-size: var(--ui-font-size-sm);
+}
+
+.commandList {
+  margin: 0;
+  padding-left: var(--ui-space-8);
+  display: grid;
+  gap: var(--ui-space-3);
+}
+
+.commandActive {
+  margin-left: calc(-1 * var(--ui-space-3));
+  padding-left: var(--ui-space-3);
+  border-left: 2px solid var(--ui-color-primary);
+}
+
+.turnActive {
+  margin-left: calc(-1 * var(--ui-space-3));
+  padding-left: var(--ui-space-3);
+  border-left: 2px solid var(--ui-color-primary);
+}
+
+.stateDetails {
+  display: grid;
+  gap: var(--ui-space-3);
+}
+
+.muted {
+  margin: 0;
+  font-size: var(--ui-font-size-sm);
+}
+
+.error {
+  margin: var(--ui-space-6) 0 0;
+  color: var(--ui-color-danger);
+  font-size: var(--ui-font-size-sm);
+}
+
+.actionBlock {
+  display: grid;
+  gap: var(--ui-space-2);
+}

@@ -1,0 +1,40 @@
+.root {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + var(--ui-space-2));
+  right: 0;
+  z-index: 20;
+  min-width: 16rem;
+  max-width: min(22rem, calc(100vw - 2rem));
+  padding: var(--ui-space-6) !important;
+  gap: var(--ui-space-6) !important;
+  box-shadow: 0 18px 50px color-mix(in srgb, var(--ui-color-text) 12%, transparent);
+}
+
+.userSummary {
+  display: grid;
+  gap: var(--ui-space-1);
+}
+
+.stateSection {
+  display: grid;
+  gap: var(--ui-space-2);
+  min-width: 0;
+}
+
+.stateBlock {
+  max-height: 10rem;
+  background: var(--ui-color-surface-alt);
+}
+
+.actions {
+  display: grid;
+  gap: var(--ui-space-2);
+}
+
+.loginForm {
+  gap: var(--ui-space-3) !important;
+}

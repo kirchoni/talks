@@ -1,0 +1,111 @@
+.app {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--ui-color-canvas);
+  color: var(--ui-color-text);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ui-space-8);
+  padding: var(--ui-space-6) var(--ui-space-10);
+  border-bottom: 1px solid var(--ui-color-border);
+  background: color-mix(in srgb, var(--ui-color-surface) 92%, transparent);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: 1.75rem;
+}
+
+.logoLight {
+  display: none;
+}
+
+:global(html[data-theme="light"]) .logoLight {
+  display: block;
+}
+
+:global(html[data-theme="light"]) .logoDark {
+  display: none;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: var(--ui-space-3);
+}
+
+.body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.stage {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  padding: var(--ui-space-10);
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--ui-color-border) 35%, transparent) 1px, transparent 1px),
+    linear-gradient(180deg, color-mix(in srgb, var(--ui-color-border) 35%, transparent) 1px, transparent 1px),
+    var(--ui-color-canvas);
+  background-size: 42px 42px;
+}
+
+.sidePanel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  border-left: 1px solid var(--ui-color-border);
+  background: var(--ui-color-surface-alt);
+}
+
+.promptBar {
+  padding: var(--ui-space-6) var(--ui-space-10);
+  border-top: 1px solid var(--ui-color-border);
+  background: color-mix(in srgb, var(--ui-color-surface) 94%, transparent);
+}
+
+.promptForm {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--ui-space-4);
+  align-items: center;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 860px) {
+  .body {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+
+  .sidePanel {
+    max-height: 40vh;
+    border-left: none;
+    border-top: 1px solid var(--ui-color-border);
+  }
+
+  .header,
+  .promptBar,
+  .stage {
+    padding-inline: var(--ui-space-6);
+  }
+}

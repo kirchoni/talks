@@ -1,0 +1,23 @@
+.root {
+  display: grid;
+  gap: var(--ui-space-3);
+  padding: var(--ui-space-6);
+  border-top: 1px solid var(--ui-color-border);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ui-space-2);
+}
+
+.label {
+  margin: 0;
+  color: var(--ui-color-text-muted);
+  font-size: var(--ui-font-size-xs);
+}
+
+.slider {
+  width: 100%;
+  accent-color: var(--ui-color-primary);
+}

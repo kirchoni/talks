@@ -1,0 +1,178 @@
+@layer design {
+  :root {
+    /**
+     * Primary font family (Excalifont).
+     *
+     * Hand-drawn voice for headings, the product shell, and `font-sans`.
+     */
+    --ui-font-family-sans:
+      Excalifont, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+
+    /**
+     * Readable body face for generated UI (`font-serif`, shadow `:host` default).
+     *
+     * DM Sans — clean geometric sans that stays legible next to Excalifont.
+     * Token name is `serif` for Uno utility compatibility; stack is sans-serif.
+     * Loaded via `next/font` in `layout.tsx`.
+     */
+    --ui-font-family-serif:
+      var(--font-body), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+
+    /**
+     * Monospace font family.
+     *
+     * Use for code, token chips, and debug output.
+     */
+    --ui-font-family-mono:
+      ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+
+    /** Extra-small text size. */
+    --ui-font-size-xs: 0.75rem;
+    /** Small text size. */
+    --ui-font-size-sm: 0.875rem;
+    /** Default body text size. */
+    --ui-font-size-md: 0.9375rem;
+    /** Base UI text size (1rem). */
+    --ui-font-size-lg: 1rem;
+    /** Large text size. */
+    --ui-font-size-xl: 1.25rem;
+    /** Extra-large text size. */
+    --ui-font-size-2xl: 1.5rem;
+    /** Display title text size. */
+    --ui-font-size-3xl: 1.75rem;
+
+    /** Tight line-height for headings. */
+    --ui-line-height-tight: 1.2;
+    /** Default readable line-height for paragraphs. */
+    --ui-line-height-normal: 1.5;
+    /** Fixed UI control line-height (pairs with buttons/inputs). */
+    --ui-line-height-ui: 1.25rem;
+
+    /** Regular font weight for body copy. */
+    --ui-font-weight-regular: 400;
+    /** Semibold font weight for labels and headers. */
+    --ui-font-weight-semibold: 600;
+    /** Bold font weight for titles. */
+    --ui-font-weight-bold: 700;
+
+    /** Spacing step 1 (smallest). */
+    --ui-space-1: 0.125rem;
+    /** Spacing step 2. */
+    --ui-space-2: 0.25rem;
+    /** Spacing step 3. */
+    --ui-space-3: 0.375rem;
+    /** Spacing step 4. */
+    --ui-space-4: 0.5rem;
+    /** Spacing step 5. */
+    --ui-space-5: 0.625rem;
+    /** Spacing step 6. */
+    --ui-space-6: 0.75rem;
+    /** Spacing step 7. */
+    --ui-space-7: 0.875rem;
+    /** Spacing step 8 (base). */
+    --ui-space-8: 1rem;
+    /** Spacing step 10. */
+    --ui-space-10: 1.25rem;
+    /** Spacing step 12. */
+    --ui-space-12: 1.5rem;
+    /** Spacing step 16. */
+    --ui-space-16: 2rem;
+    /** Spacing step 20. */
+    --ui-space-20: 2.5rem;
+    /** Spacing step 24. */
+    --ui-space-24: 3rem;
+    /** Spacing step 32. */
+    --ui-space-32: 4rem;
+
+    /**
+     * Main brand and primary-action color.
+     *
+     * On dark surfaces this is the high-contrast CTA fill (white).
+     */
+    --ui-color-primary: #ffffff;
+
+    /**
+     * Text/icon color that sits on primary fills.
+     */
+    --ui-color-on-primary: #000000;
+
+    /**
+     * Supporting neutral action color.
+     */
+    --ui-color-secondary: #888888;
+
+    /**
+     * Text/icon color that sits on secondary fills.
+     */
+    --ui-color-on-secondary: #ffffff;
+
+    /**
+     * Distinct highlight color.
+     *
+     * Use sparingly for emphasis or featured content.
+     */
+    --ui-color-accent: #7928ca;
+
+    /**
+     * Informational status color.
+     */
+    --ui-color-info: #0070f3;
+
+    /**
+     * Destructive or critical status color.
+     */
+    --ui-color-danger: #e00;
+
+    /**
+     * Cautionary status color.
+     */
+    --ui-color-warning: #f5a623;
+
+    /**
+     * Positive status color.
+     */
+    --ui-color-success: #0070f3;
+
+    /**
+     * Default page and component surface.
+     */
+    --ui-color-surface: #000000;
+
+    /**
+     * Alternate surface for subtle separation.
+     */
+    --ui-color-surface-alt: #111111;
+
+    /**
+     * Full-page canvas behind the product shell.
+     */
+    --ui-color-canvas: #000000;
+
+    /**
+     * Default text color.
+     */
+    --ui-color-text: #ededed;
+
+    /**
+     * Muted text color.
+     */
+    --ui-color-text-muted: #888888;
+
+    /**
+     * Default border color.
+     */
+    --ui-color-border: #333333;
+
+    /** Light surface tint for informational context. */
+    --ui-color-info-surface: #0070f326;
+    /** Light surface tint for danger context. */
+    --ui-color-danger-surface: #e00026;
+    /** Light surface tint for warning context. */
+    --ui-color-warning-surface: #f5a62326;
+    /** Light surface tint for success context. */
+    --ui-color-success-surface: #0070f326;
+  }
+}

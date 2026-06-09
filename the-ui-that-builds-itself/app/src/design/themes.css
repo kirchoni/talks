@@ -1,0 +1,18 @@
+@layer design {
+  [data-theme="light"] {
+    --ui-color-primary: #000000;
+    --ui-color-on-primary: #ffffff;
+    --ui-color-secondary: #666666;
+    --ui-color-on-secondary: #000000;
+    --ui-color-surface: #ffffff;
+    --ui-color-surface-alt: #fafafa;
+    --ui-color-canvas: #ffffff;
+    --ui-color-text: #000000;
+    --ui-color-text-muted: #666666;
+    --ui-color-border: #eaeaea;
+    --ui-color-info-surface: #0070f314;
+    --ui-color-danger-surface: #e00014;
+    --ui-color-warning-surface: #f5a62314;
+    --ui-color-success-surface: #0070f314;
+  }
+}

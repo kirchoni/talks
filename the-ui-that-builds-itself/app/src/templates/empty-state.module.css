@@ -1,0 +1,40 @@
+.root {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  color: var(--ui-color-primary);
+}
+
+.blurOne,
+.blurTwo,
+.blurThree {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(56px);
+  background: currentColor;
+  opacity: 0.08;
+}
+
+.blurOne {
+  top: 18%;
+  left: 12%;
+  width: 42%;
+  height: 34%;
+}
+
+.blurTwo {
+  top: 38%;
+  right: 10%;
+  width: 36%;
+  height: 30%;
+  opacity: 0.05;
+}
+
+.blurThree {
+  bottom: 12%;
+  left: 28%;
+  width: 40%;
+  height: 28%;
+  opacity: 0.06;
+}

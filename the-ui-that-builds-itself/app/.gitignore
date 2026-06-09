@@ -1,0 +1,11 @@
+.next
+logs
+db
+node_modules
+out
+dist
+!.local-deps/
+!.local-deps/**
+.env
+.env*.local
+*.tsbuildinfo
