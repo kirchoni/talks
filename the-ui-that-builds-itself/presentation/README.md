@@ -17,6 +17,18 @@ npm install
 npm run dev
 ```
 
+## GitHub Pages
+
+This deck is published at
+[`/talks/the-ui-that-builds-itself/`](https://kirchoni.github.io/talks/the-ui-that-builds-itself/)
+via the root repo workflow. Headmatter sets `routerMode: hash` so slide deep links work on GitHub Pages.
+
+From the monorepo root, build all decks into `site/`:
+
+```bash
+bash .github/scripts/build-pages.sh
+```
+
 ## Files
 
 - `slides.md`: the Slidev deck entrypoint

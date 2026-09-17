@@ -4,6 +4,18 @@ Conference talks, slide decks and live-demo code by **Kiril S. Peyanski** ([@kir
 
 Each folder is a self-contained talk with its own README, presentation assets and — where applicable — a runnable demo app.
 
+## Live decks
+
+Slide decks are published on GitHub Pages under a dedicated path per talk:
+
+| Talk | Live deck |
+|---|---|
+| The UI That Builds Itself | [kirchoni.github.io/talks/the-ui-that-builds-itself/](https://kirchoni.github.io/talks/the-ui-that-builds-itself/) |
+
+Index of all published decks: [kirchoni.github.io/talks/](https://kirchoni.github.io/talks/)
+
+Pushing to `main` rebuilds and deploys every talk that has a Slidev `presentation/` folder (see `.github/workflows/deploy-pages.yml`).
+
 ## Talks
 
 | Talk | Event / Topic | Description |
@@ -15,6 +27,7 @@ Each folder is a self-contained talk with its own README, presentation assets an
 ```
 talks/
 ├── README.md                        ← you are here
+├── .github/workflows/deploy-pages.yml
 ├── the-ui-that-builds-itself/       ← first talk
 │   ├── presentation/                   Slidev slide deck
 │   ├── app/                            Next.js demo app
@@ -28,6 +41,22 @@ Navigate into any talk folder and follow its README. Most talks include:
 
 - A **presentation** directory — install dependencies and run `npm run dev` to view the slides locally.
 - An **app** directory — a standalone demo you can run on your machine.
+
+## Adding another talk to GitHub Pages
+
+1. Create a new talk folder with a Slidev app at `<slug>/presentation/` (with `@slidev/cli` in `package.json`).
+2. Set `routerMode: hash` in that deck’s `slides.md` headmatter so deep links work on GitHub Pages.
+3. Merge to `main`. The deploy workflow builds every `*/presentation` deck to `https://kirchoni.github.io/talks/<slug>/`.
+
+To preview the site locally (GitHub Pages serves `site/` at `/talks/`):
+
+```bash
+bash .github/scripts/build-pages.sh
+mkdir -p /tmp/talks-pages-preview/talks
+cp -a site/. /tmp/talks-pages-preview/talks/
+npx --yes serve /tmp/talks-pages-preview
+# open http://localhost:3000/talks/
+```
 
 ## License
 

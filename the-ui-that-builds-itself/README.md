@@ -48,6 +48,8 @@ app/            Next.js demo app (TypeScript, React, App Router)
 
 The slide deck is a [Slidev](https://sli.dev/) project with custom Vue components, Geist typography and a light/dark design system.
 
+**Live deck:** [kirchoni.github.io/talks/the-ui-that-builds-itself/](https://kirchoni.github.io/talks/the-ui-that-builds-itself/)
+
 ```bash
 cd presentation
 npm install
