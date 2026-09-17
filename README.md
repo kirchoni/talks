@@ -1,26 +1,18 @@
 # Talks
 
+**Live decks:** [All talks](https://kirchoni.github.io/talks/) · [The UI That Builds Itself](https://kirchoni.github.io/talks/the-ui-that-builds-itself/)
+
 Conference talks, slide decks and live-demo code by **Kiril S. Peyanski** ([@kirchoni](https://x.com/kirchoni)).
 
 Each folder is a self-contained talk with its own README, presentation assets and — where applicable — a runnable demo app.
 
-## Live decks
-
-Slide decks are published on GitHub Pages under a dedicated path per talk:
-
-| Talk | Live deck |
-|---|---|
-| The UI That Builds Itself | [kirchoni.github.io/talks/the-ui-that-builds-itself/](https://kirchoni.github.io/talks/the-ui-that-builds-itself/) |
-
-Index of all published decks: [kirchoni.github.io/talks/](https://kirchoni.github.io/talks/)
-
-Pushing to `main` rebuilds and deploys every talk that has a Slidev `presentation/` folder (see `.github/workflows/deploy-pages.yml`).
-
 ## Talks
 
-| Talk | Event / Topic | Description |
-|---|---|---|
-| [The UI That Builds Itself](./the-ui-that-builds-itself/) | Generative Front-End | What happens when the interface is decided at use time by an LLM agent instead of prebuilt at deploy time by a developer. |
+| Talk | Live deck | Event / Topic | Description |
+|---|---|---|---|
+| [The UI That Builds Itself](./the-ui-that-builds-itself/) | [Open slides](https://kirchoni.github.io/talks/the-ui-that-builds-itself/) | Generative Front-End | What happens when the interface is decided at use time by an LLM agent instead of prebuilt at deploy time by a developer. |
+
+Pushing to `main` rebuilds and deploys every talk that has a Slidev `presentation/` folder (see `.github/workflows/deploy-pages.yml`). Published decks: [kirchoni.github.io/talks/](https://kirchoni.github.io/talks/).
 
 ## Repository layout
 

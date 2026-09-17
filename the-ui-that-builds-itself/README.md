@@ -1,5 +1,7 @@
 # The UI That Builds Itself: Exploring the Generative Front-End
 
+**Live presentation:** [kirchoni.github.io/talks/the-ui-that-builds-itself/](https://kirchoni.github.io/talks/the-ui-that-builds-itself/)
+
 A conference talk and live demo exploring what happens when the interface itself becomes dynamic — decided at use time by an LLM agent instead of prebuilt at deploy time by a developer.
 
 ## Products used in this presentation
@@ -47,8 +49,6 @@ app/            Next.js demo app (TypeScript, React, App Router)
 ### Presentation
 
 The slide deck is a [Slidev](https://sli.dev/) project with custom Vue components, Geist typography and a light/dark design system.
-
-**Live deck:** [kirchoni.github.io/talks/the-ui-that-builds-itself/](https://kirchoni.github.io/talks/the-ui-that-builds-itself/)
 
 ```bash
 cd presentation

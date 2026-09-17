@@ -1,5 +1,7 @@
 # Slidev presentation
 
+**Live:** [kirchoni.github.io/talks/the-ui-that-builds-itself/](https://kirchoni.github.io/talks/the-ui-that-builds-itself/)
+
 This folder is a standalone [Slidev](https://sli.dev/) project.
 
 ## Setup
