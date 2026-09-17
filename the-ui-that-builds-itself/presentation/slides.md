@@ -3,6 +3,8 @@ title: "The UI That Builds Itself: Exploring the Generative Front-End"
 theme: default
 layout: cover
 clicks: 1
+# Hash routes keep deep links working on GitHub Pages under /talks/<slug>/.
+routerMode: hash
 fonts:
   sans: Geist
   mono: Geist Mono

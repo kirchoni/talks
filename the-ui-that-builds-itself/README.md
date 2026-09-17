@@ -1,5 +1,7 @@
 # The UI That Builds Itself: Exploring the Generative Front-End
 
+**Live presentation:** [kirchoni.github.io/talks/the-ui-that-builds-itself/](https://kirchoni.github.io/talks/the-ui-that-builds-itself/)
+
 A conference talk and live demo exploring what happens when the interface itself becomes dynamic — decided at use time by an LLM agent instead of prebuilt at deploy time by a developer.
 
 ## Products used in this presentation

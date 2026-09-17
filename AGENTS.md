@@ -71,3 +71,18 @@ After publishing, the inner `.git` remains on disk and you can keep committing l
 2. Initialize a local git repo inside it if you want isolated WIP history.
 3. Add `my-new-talk/.git` to the root `.gitignore`.
 4. When ready, use the publish steps above with the new folder name and commit message.
+
+### GitHub Pages (public slide decks)
+
+The workflow `.github/workflows/deploy-pages.yml` builds every talk that has a Slidev project at `<talk>/presentation/` and deploys them to:
+
+- Index: `https://<user>.github.io/talks/`
+- Per talk: `https://<user>.github.io/talks/<talk-folder>/`
+
+Convention for new decks:
+
+1. Put the Slidev app in `<talk-folder>/presentation/` with `@slidev/cli`.
+2. Set `routerMode: hash` in `slides.md` headmatter (required for GitHub Pages deep links).
+3. Merge to `main` (or run the workflow manually). No extra Pages config is needed per talk.
+
+Local preview: `bash .github/scripts/build-pages.sh`, then serve a folder that nests `site/` under `/talks/` (same path GitHub Pages uses), e.g. copy `site/` into `/tmp/.../talks/` and serve the parent.
