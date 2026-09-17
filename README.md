@@ -14,6 +14,8 @@ Each folder is a self-contained talk with its own README, presentation assets an
 
 Pushing to `main` rebuilds and deploys every talk that has a Slidev `presentation/` folder (see `.github/workflows/deploy-pages.yml`). Published decks: [kirchoni.github.io/talks/](https://kirchoni.github.io/talks/).
 
+**One-time setup:** in the repo [Pages settings](https://github.com/kirchoni/talks/settings/pages), set **Build and deployment → Source** to **GitHub Actions**.
+
 ## Repository layout
 
 ```

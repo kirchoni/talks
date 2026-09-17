@@ -83,6 +83,8 @@ Convention for new decks:
 
 1. Put the Slidev app in `<talk-folder>/presentation/` with `@slidev/cli`.
 2. Set `routerMode: hash` in `slides.md` headmatter (required for GitHub Pages deep links).
-3. Merge to `main` (or run the workflow manually). No extra Pages config is needed per talk.
+3. Merge to `main` (or run the workflow manually).
+
+One-time repo setup: GitHub → Settings → Pages → Build and deployment → Source = **GitHub Actions**.
 
 Local preview: `bash .github/scripts/build-pages.sh`, then serve a folder that nests `site/` under `/talks/` (same path GitHub Pages uses), e.g. copy `site/` into `/tmp/.../talks/` and serve the parent.
